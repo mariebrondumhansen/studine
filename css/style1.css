@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+/*basis farvestyling*/
+body{background-color:#EBE9E9;
+	margin: 0;}
+
+header{background-color:white;}
+
+nav{background-color:#74616A;
+	margin-bottom: 10%;
+	width: 100%;}
+
+footer{background-color:#464646;}
+#tip{color:#74616A; font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";}
+#opsumering{font-size: 15px; 
+			line-height:0px; 
+			color:#74616A;}
+.boxkategori{border: medium solid;}
+.footer{color: white;}
+
+p, h2, h3, h4{font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";}
+
+/*time{border-top: dotted #C8C8C8;
+	border-bottom: dotted #C8C8C8;
+	padding: 1%;}*/
+.time{border-top: dotted #C8C8C8;
+	border-bottom: dotted #C8C8C8;
+	padding: 1%;
+	color: #C8C8C8;}
+.content{margin-left: 10%;
+		margin-right: 10%;
+		margin-bottom: 10%;
+		line-height: 1.6;
+		display: flex;
+		flex-direction: column;
+		}
+
+/*styling af DAY section*/
+.flex-billededay{display: flex;
+	flex-flow:column;}
+.Daybillede{display: flex;
+		flex-direction: row;
+	float: right;}
+.tekst1{display: flex;
+		flex-direction: column;
+		background-color:#94A7BF; 
+		color: white;}
+/*slut*/
+
+/*styling af NIGHT section*/
+.flex-billedenight{display: flex;
+	flex-flow: column;}
+.nightbillede{display: flex;
+			flex-direction: row;
+			float: right;}
+.tekst2{display: flex;
+		flex-direction: column;
+		background-color:#725764; 
+		color: white;
+		float: left;}
+/**SLUT/
+
+
+/*her defineres hovedboksen i navigationsboksen*/
+
+
+/*Hele dokumentet*/
+.flex-container{display: -webkit-flex;/*Chrome, Safari, newer versions of Opera, almost all iOS browsers (including Firefox for iOS); basically, any WebKit based browser*/		  display: -moz-flex;/*Firefox*/
+				display: -o-flex;/*Old, pre-WebKit, versions of Opera)*/
+				disply: ms-flex;/*Internet Explorer and Microsoft Edge*/
+				display: flex;
+				flex-direction:column;}
+/*slut*/
+
+/*Hovedindholdet på siden*/
+.main-wrapper{display: flex;
+flex-direction: column;}
+
+.main{margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 5%;
+	background-color: white;
+	text-align: left;}
+/*
+header{grid-area: header;}
+.main{grid-area: main;}
+.footer{grid-area: footer;}
+.container{display: grid; 
+grid-template-columns: 3fr 1fr; 
+grid-template-areas: "header header" "main main" "footer footer"; 
+grid-gap: 60px;
+			
+
+}
+*/
+
+/*logo centreres*/	
+h1{text-align: center;}
+/*slut*/
+
+/*Star på menulinje*/
+.menu{align-content:left;}
+/*styling af selve menukassen*/
+ul.topnav {
+    list-style-type: none;
+    padding:1%;
+    overflow: hidden;
+	margin-left: 15%;
+    /*background-color: white;*/
+}
+	
+/*slut*/
+/*Her difineres hvor menulinjen skal placers*/
+ul.topnav li {float: left;}
+/*slut*/
+/*styling placering samt af menulinks*/
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+	margin-top: 3%;
+	padding:10px 15px;
+	text-decoration: none;
+	font-size: 20px;
+	border-right:1px solid #FFFFFF;}
+
+/*slut*/
+/*Styling af mouseover på links i menuen*/
+ul.topnav li a:hover:not(.active) {background-color:black; color: white}
+/*slut*/
+/*styling af aktuelle side*/		
+ul.topnav li a.active {background-color:black;}
+/*slut på menulinje*/
+
+
+@media screen and (max-width: 600px){
+	ul.topnav li.right, 
+    ul.topnav li {float: left;}
+	.main{margin-left: 5%;
+	margin-right:5%;
+	margin-top: 3%;
+	margin-bottom: 5%;
+	background-color: white;
+	text-align: left;}
+	
+}
+
+/*@media (max-width: 600px) {.main-wrapper} {flex-direction: column;}
+.main{margin-right: 0;
+	margin-bottom: 60px;}*/
+
+
+

@@ -1,0 +1,214 @@
+@charset "utf-8";
+/* CSS Document */
+/*Baggrundsfarve i bodyen. Har sat margin på 0 for at nulstille browserindstilninger*/
+body{background-color:#EBE9E9;
+	margin: 0;}
+/*SLUT*/
+
+/*Flex-container indrammer hele bodyen. Her fortæller jeg til en masse browsere at de skal forstå at jeg arbejder med flex boxe.*/
+.flex-container{display: -webkit-flex;/*Chrome, Safari, newer versions of Opera, almost all iOS browsers (including Firefox for iOS); basically, any WebKit based browser*/		  display: -moz-flex;/*Firefox*/
+				display: -o-flex;/*Old, pre-WebKit, versions of Opera)*/
+				disply: ms-flex;/*Internet Explorer and Microsoft Edge*/
+				display: flex;
+				flex-direction:column;}
+/*slut*/
+
+/*Farve på header-området.*/
+header{background-color:white;}
+/*SLUT*/
+
+/*logo centreres*/	
+h1{text-align: center;}
+/*SLUT*/
+
+/*Farve på navigationsbjælken. Viden. Margin i bunden til navigationslinjen*/
+nav{background-color:#74616A;
+	margin-bottom: 10%;
+	width: 100%;}
+/*SLUT*/
+
+/*Styling af kasse i kasse i menuen. Menukassen sættes til venstre*/
+.menu{align-content:left;}
+/*SLUT*/
+
+/*styling af selve menukassen*/
+/*Fjerne liste-funktionen. Bestemmer afstand til venstre. */
+ul.topnav {
+    list-style-type: none;
+    padding:1%;
+    overflow: hidden;
+	margin-left: 15%;
+    /*background-color: white;*/}
+/*SLUT*/
+
+/*Her difineres hvor menulinjen skal placers*/
+ul.topnav li {float: left;}
+/*slut*/
+/*styling af liste af links i menuen. Hvid tekst. Bestemmelse af afstand imellem links. Diffinerer kant på højre side af links.*/
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+	margin-top: 3%;
+	padding:10px 15px;
+	text-decoration: none;
+	font-size: 20px;
+	border-right:1px solid #FFFFFF;}
+/*slut*/
+
+/*Styling af mouseover på links i menuen. Baggrundsfarven sort. Hvid tekst.*/
+ul.topnav li a:hover:not(.active) {background-color:
+								black; color: white}
+/*slut*/
+/*styling af aktuelle side. ser ikke ud til at virke*/		
+ul.topnav li a.active {background-color:black;}
+/*SLUT*/
+/*SLUT PÅ MENULINJE*/
+
+/*HOVEDKASSERNE SOM INDHOLDET BESTÅR AF*/
+/*Hovedindholdet på siden diffineres som flexibel. Indhold er i kolonner*/
+.main-wrapper{display: flex;
+flex-direction: column;}
+/*SLUT*/
+
+/*Kasse inde i main-wrapper. Der bliver ikke skrevet noget test/billeder i denne kasse*/
+.main{margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 5%;
+	background-color: white;
+	text-align: left;}
+/*slut*/
+
+/*Kassen er inde i main-wrapper + .main. Her bliver tekt/billeder vist. Difinneres hvor stor kassen er. Hvor meget linjeastand der er mellem linjerne. Indholdet er i kolonner.*/
+.content{margin-left: 10%;
+		margin-right: 10%;
+		margin-bottom: 10%;
+		line-height: 1.6;
+		display: flex;
+		flex-direction: column;
+		}
+/*SLUT*/
+
+/*SLUT på HOVEDKASSERNE SOM INDHOLDET BESTÅR AF*/
+/*styling af tekst*/
+/*Fonten difineres*/
+p, h2, h3, h4{font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";}
+/*slut*/
+
+/*størrelse på hovedoverskrifter i artikler deffineres. sættes understreg under tekst.*/
+h2{font-size: 250%;
+text-decoration: underline;}
+/*SLUT*/
+
+/*styling af et en bestem klasse. Her er det meningen at ordet "tip" i artikel om londons skulle have en bestemt farve*/
+.tip{color:#74616A;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";}
+/*slut*/
+
+/*Styling af opsumerings-section i prioteringsartikel*/
+.opsumering{font-size: 15px;  
+			color:#74616A;
+			}
+/*SLUT*/
+
+/*Her laver jeg boks omkring hvornår artikel er skrevet*/
+.boxkategori{border: medium solid;}
+/*SLUT*/
+/*Her forsøgte jeg mig med dotter rundt om hvornår artikel er skrevet*/
+/*
+.time{border-top: dotted #C8C8C8;
+	border-bottom: dotted #C8C8C8;
+	padding: 1%;
+	color: #C8C8C8;}*/
+/*SLUT*/
+/*SLUT på styling af tekst*/
+
+
+
+
+
+
+/*Styling af flexbokse i artikel om mode*/
+/*styling af DAY section.*/
+.flex-billededay{display: flex;
+	flex-flow:column;}
+/*slut*/
+/*start på hvad?*/
+.Daybillede{display: flex;
+		flex-direction: row;
+	float: right;}
+/*SLUT*/
+/*start på hvad?*/
+.tekst1{display: flex;
+		flex-direction: column;
+		background-color:#94A7BF; 
+		color: white;}
+/*slut*/
+
+/*styling af NIGHT section*/
+.flex-billedenight{display: flex;
+	flex-flow: column;}
+/*start på hvad?*/
+.nightbillede{display: flex;
+			flex-direction: row;
+			float: right;}
+/*SLUT*/
+/*Start på hvad?*/
+.tekst2{display: flex;
+		flex-direction: column;
+		background-color:#725764; 
+		color: white;
+		float: left;}
+/*SLUT*/
+/*SLUT på Styling af flexbokse i artikel om mode**/
+
+
+/*Styling af footer. baggrundsfarve er mørk.*/
+footer{background-color:#464646;}
+/*SLUT*/
+/*Styling af teksten i footer. centreringen ser ikke ud til at virke*/
+.footer{color: white;
+		text-align: center;}
+/*SLUT*/
+
+/*Her bestemmer jeg hvad der skal ske når siden rammer en enhed med en max-widte på 600px*/
+@media screen and (max-width: 600px){
+	ul.topnav li.right, 
+    ul.topnav li {float: left;}
+	/*ændre på margin da man ikke behøver så meget whitespace på små enheder*/
+	.main{margin-left: 5%;
+	margin-right:5%;
+	margin-top: 3%;
+	margin-bottom: 5%;
+	background-color: white;
+	text-align: left;}
+	/*slut*/
+	
+
+/*
+header{grid-area: header;}
+.main{grid-area: main;}
+.footer{grid-area: footer;}
+.container{display: grid; 
+grid-template-columns: 3fr 1fr; 
+grid-template-areas: "header header" "main main" "footer footer"; 
+grid-gap: 60px;
+			
+
+}
+*/
+
+
+
+
+
+
+
+}
+
+/*@media (max-width: 600px) {.main-wrapper} {flex-direction: column;}
+.main{margin-right: 0;
+	margin-bottom: 60px;}*/
+
+
+
